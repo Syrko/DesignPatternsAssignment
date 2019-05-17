@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD88C633-F314-4073-AD3D-06EBC24DCA2E}</ProjectGuid>
+    <ProjectGuid>{629E2CAC-A79E-4146-8434-1CB38D3C601E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ISP_Violation</RootNamespace>
-    <AssemblyName>ISP_Violation</AssemblyName>
+    <RootNamespace>ISP</RootNamespace>
+    <AssemblyName>ISP</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

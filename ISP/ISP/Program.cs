@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ISP
 {
@@ -58,7 +62,7 @@ namespace ISP
 		void unlock();
 	}
 
-	class ProtectedDoor: PasswordClient, Door
+	class ProtectedDoor : PasswordClient, Door
 	{
 		private bool locked;
 		public void lockDoor()
