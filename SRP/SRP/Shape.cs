@@ -17,29 +17,36 @@ namespace SRP
             Rectangle rect = new Rectangle(xUpperLeftCorner, yUpperLeftCorner, width, height);
             return rect;
         }
-            private int xUpperLeftCorner = 0;
-            private int yUpperLeftCorner = 0;
-            private int width = 200;
-            private int height = 100;
 
-            public int getShapeY()
-            {
-                return yUpperLeftCorner;
-            }
+        public void paint(Graphics g)
+        {
+            Pen myPen = new Pen(Color.Black);
+            g.DrawRectangle(myPen, draw(150, 150));
+        }
 
-            public int getShapeX()
-            {
-                return xUpperLeftCorner;
-            }
+        private int xUpperLeftCorner = 0;
+        private int yUpperLeftCorner = 0;
+        private int width = 200;
+        private int height = 100;
 
-            public int getShapeHeight()
-            {
-                return height;
-            }
+        public int getShapeY()
+        {
+            return yUpperLeftCorner;
+        }
 
-            public int getShapeWidth()
-            {
-                return width;
-            }
+        public int getShapeX()
+        {
+            return xUpperLeftCorner;
+        }
+
+        public int getShapeHeight()
+        {
+            return height;
+        }
+
+        public int getShapeWidth()
+        {
+            return width;
+        }
     }
 }

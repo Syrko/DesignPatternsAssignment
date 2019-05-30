@@ -19,10 +19,10 @@ namespace SRP
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Shape myShape = new Shape();
             Graphics g = e.Graphics;
-            Pen myPen = new Pen(Color.Black);
-            g.DrawRectangle(myPen, myShape.draw(150, 150));
+
+            Shape myShape = new Shape();
+            myShape.paint(g);
             GeometricShape myGeoShape = new GeometricShape(myShape);
             Console.WriteLine("Lower Right Corner. X: " + myGeoShape.getXLowerRightCorner() + " Y: " + myGeoShape.getYLowerRightCorner());
         }
