@@ -59,7 +59,7 @@ namespace ActiveRecord
 		// SQL Operation Methods			//
 		//----------------------------------//
 		[MethodImpl(MethodImplOptions.Synchronized)]
-		public static Student findGuId(Guid uniqueID)
+		public static Student findByGuId(Guid uniqueID)
 		{
 			try
 			{
@@ -67,8 +67,9 @@ namespace ActiveRecord
 				{
 					db.Open();
 
-					string sqlStatement = "SELECT `guid`, `grade`, `studentID`, `name` FROM `students` where `guid`=?";
+					string sqlStatement = "SELECT `guid`, `grade`, `studentID`, `name` FROM `students` where `guid`=@guid";
 					SqlCommand command = new SqlCommand(sqlStatement, db);
+					command.Parameters.AddWithValue("@guid", uniqueID);
 
 					SqlDataReader dataReader = command.ExecuteReader();
 
